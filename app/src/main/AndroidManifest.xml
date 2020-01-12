@@ -16,6 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!--here is where we declare (add) new activities-->
+        <activity android:name=".SecondActivity"/>
+
+
+
     </application>
 
 </manifest>
