@@ -57,11 +57,36 @@ class MainActivity : AppCompatActivity() {
 
             //if application crashes, refer to logcat to identify problem
 
-
-
-
         }
+        //video two section five
+        //in this section, we are going to share data between activities and the selected app(like facebook, handouts, and so on) choose by the user
+        //use the lambda expression
+        btnShareToOtherApps.setOnClickListener {
 
+            val message: String = etUserMessage.text.toString()
+
+            //there is not need to parse anything, because we don't know where are we going to share the data
+            val intent = Intent()
+            intent.action = Intent.ACTION_SEND
+            intent.putExtra(Intent.EXTRA_TEXT, message)
+            intent.type = "text/plain"
+
+            //now, parse the activitie
+            startActivity(Intent.createChooser(intent, "Share to : "))
+            //if the application like gmail are not displayed in the intent, simply download them. the emulator might not have those applications install
+
+
+
+        }//end of btnShareToOtherApps
+
+
+        //Section 3 video 1
+        //Implement onClick listener for the Recycler View Demo button
+        btnRecyclerViewDemo.setOnClickListener {
+
+            val intent = Intent(this,HobbiesActivity::class.java)
+            startActivity(intent)
+        }
 
 
     }

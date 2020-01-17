@@ -24,7 +24,7 @@ class SecondActivity : AppCompatActivity(){
         txvUserMessage.text = msg
 
 
-
+//Implicit intent
 
 
     }

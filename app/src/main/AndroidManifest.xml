@@ -20,6 +20,8 @@
         <!--here is where we declare (add) new activities-->
         <activity android:name=".SecondActivity"/>
 
+        <activity android:name=".HobbiesActivity"/>
+
 
 
     </application>
