@@ -1,8 +1,10 @@
-package com.example.msgshareapp
+package com.example.msgshareapp.activities
 
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.msgshareapp.R
+import com.example.msgshareapp.showToast
 import kotlinx.android.synthetic.main.activity_second.*
 
 class SecondActivity : AppCompatActivity(){
@@ -15,12 +17,10 @@ class SecondActivity : AppCompatActivity(){
         //this is how to extract the incoming value from the user_message coming from main activity
      val bundle: Bundle? = intent.extras
         //Bundle? is a nullable
-
         val msg = bundle!!.getString("user_message")
         //now get the key from the main activity, it must match.
         // "!!" not null assertion operator
-
-        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
+        showToast(msg)
         txvUserMessage.text = msg
 
 

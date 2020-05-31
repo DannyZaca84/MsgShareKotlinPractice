@@ -1,4 +1,4 @@
-package com.example.msgshareapp
+package com.example.msgshareapp.models
 
 data class Hobby(var title: String)
 
@@ -6,7 +6,7 @@ data class Hobby(var title: String)
 object Supplier{
 
     //                           This is how we populate the list.
-    val hobbies = listOf<Hobby>(
+    val hobbies = listOf(
         Hobby("Reading"),
         Hobby("Walk"),
         Hobby("Kick Box"),
