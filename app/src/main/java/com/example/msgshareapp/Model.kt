@@ -5,7 +5,7 @@ data class Hobby(var title: String)
 
 object Supplier{
 
-    //                           This is how we populate the list
+    //                           This is how we populate the list.
     val hobbies = listOf<Hobby>(
         Hobby("Reading"),
         Hobby("Walk"),
