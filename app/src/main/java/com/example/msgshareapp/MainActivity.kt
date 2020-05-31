@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra(Intent.EXTRA_TEXT, message)
             intent.type = "text/plain"
 
-            //now, parse the activitie
+            //now, parse the activity
             startActivity(Intent.createChooser(intent, "Share to : "))
             //if the application like gmail are not displayed in the intent, simply download them. the emulator might not have those applications install
 
